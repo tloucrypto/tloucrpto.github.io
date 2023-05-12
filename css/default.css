@@ -65,8 +65,27 @@ body {
   color: #CFD8DC;
   text-align: left;
   background-color: #000000;
-  overflow: hidden;
+  overflow-y: scroll;
+}
 
+
+body::-webkit-scrollbar {
+  display: none; /* oculta a barra de rolagem do navegador Chrome e Safari */
+}
+
+body::-webkit-scrollbar-thumb {
+  display: none; /* oculta o polegar da barra de rolagem no Chrome e Safari */
+}
+
+body::-webkit-scrollbar-track {
+  display: none; /* oculta a pista da barra de rolagem no Chrome e Safari */
+}
+
+
+#intro-section {
+  background-image: url('../img/ellie.webp');
+  background-size: cover;
+  background-position:  90% 90%;
 }
 
 [tabindex="-1"]:focus {
