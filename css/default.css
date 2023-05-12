@@ -51,8 +51,7 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent; }
 
-@-ms-viewport {
-  width: 90%; }
+@-ms-viewport { width:device-width; }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
@@ -65,7 +64,10 @@ body {
   line-height: 1.5;
   color: #CFD8DC;
   text-align: left;
-  background-color: #000000; }
+  background-color: #000000;
+  overflow: hidden;
+
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
